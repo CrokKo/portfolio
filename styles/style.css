@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor1: #000000;
+    --cor2: #f6f6f6;
+    --cor3: #22d4fd;
+    --cor4: #272727;
+
+    --font1: 'Montserrat', sans-serif;
+    --font2: 'Krona One', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor1);
+    color: var(--cor2);
+}
+
+.head {
+    padding: 2% 0% 0% 15%;
+}
+
+.head__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.head__menu__header {
+    text-decoration: none;
+    font-family: var(--font1);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor3);
+}
+
+.titulo-destaque {
+    color: var(--cor3);
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 15%;
+    gap: 84px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column; 
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--font2);
+}
+
+.apresentacao__conteudo__paragrafo {
+    font-size: 1.5rem;
+    font-family: var(--font1);
+}
+
+.apresentacao__conteudo__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__conteudo__links__acesse{
+    font-family: var(--font2);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__conteudo__links__link {
+    /*background-color: #F6F6F6;
+        ignorado pelo VS Code*/
+    border-radius: 8px;
+    border: 2px solid var(--cor3);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px; 
+    font-size: 1.5rem;      
+    padding: 21px 0;
+    text-decoration: none;
+    font-family: var(--font1);
+    font-weight: 600;
+    color: var(--cor2);
+    display:flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.apresentacao__conteudo__links__link:hover {
+    background-color: var(--cor4);
+    font-weight: 400;
+}
+
+.apresentacao__imagem{
+    width: 50%;
+}
+
+.footer {
+    font-family: var(--font1);
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 24px;
+    text-align: center;
+    color: var(--cor1);
+    background-color: var(--cor3);
+}
+
+@media (max-width: 1200px){
+    .head{
+        padding: 10%;
+    }
+
+    .head__menu{
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
